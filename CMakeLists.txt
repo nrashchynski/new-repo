@@ -9,5 +9,11 @@ add_executable(new-repo src/main.cpp src/fibonacci.cpp)
 
 enable_testing()
 
-add_executable(test_fibonacci src/test_fibonacci.cpp src/fibonacci.cpp)
-add_test(NAME FibonacciTest COMMAND test_fibonacci)
+add_executable(test_fibonacci_1 src/test_fibonacci_1.cpp src/fibonacci.cpp)
+add_test(NAME FibonacciTest1 COMMAND test_fibonacci_1)
+
+add_executable(test_fibonacci_2 src/test_fibonacci_2.cpp src/fibonacci.cpp)
+add_test(NAME FibonacciTest2 COMMAND test_fibonacci_2)
+
+add_executable(test_fibonacci_3 src/test_fibonacci_3.cpp src/fibonacci.cpp)
+add_test(NAME FibonacciTest3 COMMAND test_fibonacci_3)
